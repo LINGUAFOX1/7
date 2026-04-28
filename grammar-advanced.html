@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Advanced</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Grammar Advanced Concepts</h1>
+    <div id="grammar-content"></div>
+    <script>
+        const grammarData = [
+            { "topic": "Tenses", "description": "Understanding different tenses in English." },
+            { "topic": "Parts of Speech", "description": "Definitions and examples of noun, verb, adjective, etc." },
+            { "topic": "Sentence Structure", "description": "How to structure sentences properly." }
+        ];
+
+        function loadGrammarContent() {
+            const container = document.getElementById('grammar-content');
+            grammarData.forEach(item => {
+                const section = document.createElement('section');
+                section.innerHTML = `<h2>${item.topic}</h2><p>${item.description}</p>`;
+                container.appendChild(section);
+            });
+        }
+
+        loadGrammarContent();
+    </script>
+</body>
+</html>
