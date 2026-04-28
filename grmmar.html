@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><title>Grammar - LinguaFox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">🦊 LinguaFox</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="grammar.html" class="active">Grammar</a>
+            <a href="reading.html">Reading</a>
+            <a href="listening.html">Listening</a>
+        </div>
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>Lesson 1: Present Simple (Beginner)</h2>
+            <p>We use the <strong>Present Simple</strong> for habits and facts.</p>
+            <ul style="margin: 1rem 2rem;">
+                <li>I <em>play</em> tennis.</li>
+                <li>He <em>eats</em> an apple.</li>
+            </ul>
+            
+            <div class="quiz-container" style="border-top: 1px solid #ddd; margin-top: 1rem; padding-top: 1rem;">
+                <p><strong>Practice:</strong> She ____ (go) to school everyday.</p>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 'g1')">go</button>
+                <button class="quiz-option" onclick="checkAnswer(this, true, 'g1')">goes</button>
+                <button class="quiz-option" onclick="checkAnswer(this, false, 'g1')">going</button>
+                <p class="explanation hidden" style="color:var(--success)">Correct! With 'She/He/It', we add -s or -es.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
